@@ -1,6 +1,6 @@
 [loggers.testapp]
 type = "LogRoller.RollingLogger"
-filename = "/tmp/testapp.log"
+filename = "testapp.log"
 # sizelimit = 10240000
 # nfiles = 5
 # min_level = "Debug"                   # Debug, Info (default) or Error
@@ -9,14 +9,14 @@ filename = "/tmp/testapp.log"
 [loggers.testapptee]
 type = "LogRoller.RollingFileWriterTee"
 destination = "testapp"
-filename = "/tmp/testapptee.log"
+filename = "testapptee.log"
 # sizelimit = 10240000
 # nfiles = 5
 # assumed_level = "Debug"                 # Debug, Info (default) or Error
 
 [loggers.plainfile]
 type = "LogRoller.RollingFileWriter"
-filename = "/tmp/testplain.log"
+filename = "testplain.log"
 # sizelimit = 10240000
 # nfiles = 5
 # assumed_level = "Debug"                 # Debug, Info (default) or Error

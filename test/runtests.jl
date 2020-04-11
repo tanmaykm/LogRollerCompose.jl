@@ -2,9 +2,9 @@ using LogCompose, Test, Logging, LogRoller, LogRollerCompose
 
 function test()
     config = joinpath(@__DIR__, "testapp.toml")
-    rotated_logfile = "/tmp/testapp.log"
-    rotated_tee_logfile = "/tmp/testapptee.log"
-    rotated_plain_logfile = "/tmp/testplain.log"
+    rotated_logfile = "testapp.log"
+    rotated_tee_logfile = "testapptee.log"
+    rotated_plain_logfile = "testplain.log"
     rm(rotated_logfile; force=true)
     rm(rotated_tee_logfile; force=true)
     rm(rotated_plain_logfile; force=true)
@@ -37,6 +37,14 @@ function test()
 
     log_file_contents = readlines(rotated_plain_logfile)
     @test "testplainfilewriter" == log_file_contents[1]
+
+    try
+        rm(rotated_logfile; force=true)
+        rm(rotated_tee_logfile; force=true)
+        rm(rotated_plain_logfile; force=true)
+    catch ex
+        # ignore errors due to file handles being busy on Windows
+    end
 end
 
 test()
