@@ -1,0 +1,4 @@
+name = "LogRollerCompose"
+uuid = "35b68a49-52b3-46cc-a782-1725e63e5e62"
+authors = ["tan <tanmaykm@gmail.com>"]
+version = "0.1.0"
