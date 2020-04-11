@@ -1,0 +1,22 @@
+[loggers.testapp]
+type = "LogRoller.RollingLogger"
+filename = "/tmp/testapp.log"
+# sizelimit = 10240000
+# nfiles = 5
+# min_level = "Debug"                   # Debug, Info (default) or Error
+# timestamp_identifier = "time"
+
+[loggers.testapptee]
+type = "LogRoller.RollingFileWriterTee"
+destination = "testapp"
+filename = "/tmp/testapptee.log"
+# sizelimit = 10240000
+# nfiles = 5
+# assumed_level = "Debug"                 # Debug, Info (default) or Error
+
+[loggers.plainfile]
+type = "LogRoller.RollingFileWriter"
+filename = "/tmp/testplain.log"
+# sizelimit = 10240000
+# nfiles = 5
+# assumed_level = "Debug"                 # Debug, Info (default) or Error
