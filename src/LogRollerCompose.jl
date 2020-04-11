@@ -1,7 +1,9 @@
 module LogRollerCompose
 
-using LogRoller, LogCompose
-import LogCompose: logcompose, log_min_level, log_assumed_level
+using LogRoller, LogCompose, Logging
+import LogCompose: logcompose, log_min_level
+
+log_assumed_level(logger_config::Dict{String,Any}, default::String="Info") = getproperty(Logging, Symbol(get(logger_config, "assumed_level", default)))
 
 function logcompose(::Type{LogRoller.RollingLogger}, config::Dict{String,Any}, logger_config::Dict{String,Any})
     filename = String(strip(logger_config["filename"]))
