@@ -18,9 +18,11 @@ Example configurations:
 type = "LogRoller.RollingLogger"
 filename = "testapp.log"
 # sizelimit = 10240000
+# entry_sizelimit = 262144
 # nfiles = 5
 # min_level = "Debug"                   # Debug, Info (default) or Error
 # timestamp_identifier = "time"
+# format = "console"                    # console or json
 
 [loggers.rollingfile]
 type = "LogRoller.RollingFileWriter"
