@@ -1,8 +1,7 @@
 # LogRollerCompose
 
-[![Build Status](https://travis-ci.org/tanmaykm/LogRollerCompose.jl.png)](https://travis-ci.org/tanmaykm/LogRollerCompose.jl) 
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/tanmaykm/LogRollerCompose.jl?branch=master&svg=true)](https://ci.appveyor.com/project/tanmaykm/logrollercompose-jl/branch/master) 
-[![Coverage Status](https://coveralls.io/repos/github/tanmaykm/LogRollerCompose.jl/badge.svg?branch=master)](https://coveralls.io/github/tanmaykm/LogRollerCompose.jl?branch=master)
+[![Build Status](https://github.com/tanmaykm/LogRollerCompose.jl/workflows/CI/badge.svg)](https://github.com/tanmaykm/LogRollerCompose.jl/actions/?query=workflow%3ACI+branch%3Amaster)
+[![codecov.io](http://codecov.io/github/tanmaykm/LogRollerCompose.jl/coverage.svg?branch=master)](http://codecov.io/github/tanmaykm/LogRollerCompose.jl?branch=master)
 
 Provides plugins to allow logger provided by [LogRoller](https://github.com/tanmaykm/LogRoller.jl) to be used with [LogCompose](https://github.com/tanmaykm/LogCompose.jl).
 
