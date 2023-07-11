@@ -9,7 +9,6 @@ Provides plugins to allow logger provided by [LogRoller](https://github.com/tanm
 The following logger types can be composed with this package:
 - LogRoller.RollingLogger
 - LogRoller.RollingFileWriter
-- LogRoller.RollingFileWriterTee
 
 Example configurations:
 
@@ -27,14 +26,6 @@ filename = "testapp.log"
 [loggers.rollingfile]
 type = "LogRoller.RollingFileWriter"
 filename = "testplain.log"
-# sizelimit = 10240000
-# nfiles = 5
-# assumed_level = "Debug"                 # Debug, Info (default) or Error
-
-[loggers.rollingfiletee]
-type = "LogRoller.RollingFileWriterTee"
-destination = "testapp"
-filename = "testapptee.log"
 # sizelimit = 10240000
 # nfiles = 5
 # assumed_level = "Debug"                 # Debug, Info (default) or Error
