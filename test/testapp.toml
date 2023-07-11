@@ -6,14 +6,6 @@ filename = "testapp.log"
 # min_level = "Debug"                   # Debug, Info (default) or Error
 # timestamp_identifier = "time"
 
-[loggers.testapptee]
-type = "LogRoller.RollingFileWriterTee"
-destination = "testapp"
-filename = "testapptee.log"
-# sizelimit = 10240000
-# nfiles = 5
-# assumed_level = "Debug"                 # Debug, Info (default) or Error
-
 [loggers.plainfile]
 type = "LogRoller.RollingFileWriter"
 filename = "testplain.log"
