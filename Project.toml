@@ -3,7 +3,7 @@ uuid = "35b68a49-52b3-46cc-a782-1725e63e5e62"
 authors = ["Tanmay Mohapatra <tanmaykm@gmail.com>"]
 license = "MIT"
 desc = "Enable LogRoller for LogCompose"
-version = "0.2.0"
+version = "0.3.0"
 
 [deps]
 LogCompose = "8416b438-731e-11ea-2421-05f642269042"
@@ -12,7 +12,7 @@ LogRoller = "c41e01d8-14e5-11ea-185b-e7eabed7be4b"
 
 [compat]
 julia = "1"
-LogRoller = "0.4"
+LogRoller = "0.5"
 LogCompose = "0.2"
 
 [extras]
