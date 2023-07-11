@@ -12,7 +12,7 @@ LogRoller = "c41e01d8-14e5-11ea-185b-e7eabed7be4b"
 
 [compat]
 julia = "1"
-LogRoller = "0.5"
+LogRoller = "0.4,0.5"
 LogCompose = "0.2"
 
 [extras]
