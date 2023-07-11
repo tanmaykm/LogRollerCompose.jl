@@ -9,6 +9,7 @@ julia:
   - 1.3
   - 1.4
   - 1.5
+  - 1.9
   - nightly
 
 # # Uncomment the following lines to allow failures on nightly julia
